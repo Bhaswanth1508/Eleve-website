@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Services", href: "#services" },
-  { name: "About", href: "#about" },
-  { name: "Case Studies", href: "#case-studies" },
-  { name: "Insights", href: "#insights" },
+  { name: "Services", href: "/#services" },
+  { name: "About", href: "/#about" },
+  { name: "Case Studies", href: "/#case-studies" },
+  { name: "Insights", href: "/#insights" },
 ];
+
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,18 +32,18 @@ export function Navbar() {
         isScrolled ? "h-16 py-0 glass border-b shadow-2xl" : "h-20 py-0"
       )}
     >
-      <div className="container mx-auto h-full px-12 flex items-center justify-between">
+      <div className="container mx-auto h-full px-6 md:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <a href="/" className="group flex items-center gap-2">
+          <Link to="/" className="group flex items-center gap-2">
             <div className="w-8 h-8 accent-gradient rounded-sm transition-transform group-hover:rotate-12" />
             <span className="font-heading font-extrabold text-xl tracking-tighter uppercase whitespace-nowrap">
               Eleve
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -53,18 +55,20 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <Button className="glass px-6 py-2 h-auto text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 rounded-sm">
-            Book Strategy Call
-          </Button>
+        <div className="hidden lg:flex items-center gap-4">
+          <Link to="/contact">
+            <Button className="glass px-6 py-2 h-auto text-[10px] font-bold uppercase tracking-widest hover:bg-white/10 rounded-sm">
+              Book Strategy Call
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="lg:hidden text-white glass p-2 rounded-md"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
@@ -75,7 +79,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 glass mt-2 mx-4 rounded-2xl p-6 md:hidden"
+            className="absolute top-full left-0 right-0 glass mt-2 mx-4 rounded-2xl p-6 lg:hidden"
           >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (

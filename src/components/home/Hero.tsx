@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { ArrowDown, Play, TrendingUp, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 export function Hero() {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated Background Elements */}
@@ -38,7 +41,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]" />
       </div>
 
-      <div className="container mx-auto px-12 relative z-10 flex flex-col md:flex-row items-center gap-16">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col md:flex-row items-center gap-16">
         <div className="w-full lg:w-3/5 text-left">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -55,7 +58,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="text-6xl md:text-8xl font-heading font-extrabold tracking-tighter mb-8 leading-[0.9] uppercase"
+            className="text-4xl sm:text-6xl md:text-8xl font-heading font-extrabold tracking-tighter mb-8 leading-[0.9] uppercase"
           >
             Scale <span className="text-outline">Smarter.</span><br />
             Operate Better.<br />
@@ -78,7 +81,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center gap-4"
           >
-            <Button size="lg" className="h-16 px-10 rounded-full accent-gradient text-white font-bold text-sm hover:opacity-90 transition-opacity">
+            <Button 
+              size="lg" 
+              onClick={() => navigate("/contact")}
+              className="h-16 px-10 rounded-full accent-gradient text-white font-bold text-sm hover:opacity-90 transition-opacity cursor-pointer"
+            >
               Start Your Transformation
             </Button>
             <Button size="lg" variant="outline" className="h-16 px-10 rounded-full glass font-bold text-sm border-white/10">

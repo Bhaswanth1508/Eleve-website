@@ -77,7 +77,7 @@ export function About() {
               viewport={{ once: true }}
             >
               <h4 className="text-white/40 uppercase tracking-[0.3em] text-sm font-bold mb-4">The Eleve Mission</h4>
-              <h2 className="text-4xl md:text-5xl font-display font-medium mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium mb-6 leading-tight">
                 Not just consultants. <br />
                 Your <span className="text-gradient">Architects of Scale.</span>
               </h2>

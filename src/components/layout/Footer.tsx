@@ -15,7 +15,30 @@ export function Footer() {
 
   return (
     <footer className="bg-black/40 border-t border-white/5 pt-24 pb-12 relative overflow-hidden">
-      <div className="container mx-auto px-12 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 relative z-10">
+        {/* Newsletter Section */}
+        <div className="mb-20 pb-20 border-b border-white/5">
+          <div className="max-w-xl">
+            <h3 className="text-2xl md:text-3xl font-heading font-extrabold uppercase mb-4 tracking-tighter">
+              Stay <span className="text-outline">Synchronized.</span>
+            </h3>
+            <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold mb-8 leading-relaxed">
+              Get elite strategy insights and operational blueprints delivered to your secure signal. No noise. Just scale.
+            </p>
+            <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
+              <input 
+                type="email" 
+                placeholder="ENTER SIGNAL EMAIL" 
+                className="flex-1 h-14 bg-white/[0.03] border border-white/10 rounded-sm px-6 text-[10px] font-bold tracking-[0.2em] uppercase focus:outline-none focus:border-cyan-500/50 transition-all placeholder:text-white/20"
+                required
+              />
+              <Button className="h-14 px-10 rounded-sm accent-gradient text-white font-bold text-[10px] uppercase tracking-[0.2em] hover:opacity-90 transition-opacity">
+                Subscribe
+              </Button>
+            </form>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           <div className="lg:col-span-4 max-w-sm">
             <div className="flex items-center gap-2 mb-8 group cursor-pointer">

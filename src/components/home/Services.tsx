@@ -81,7 +81,7 @@ export function Services() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl md:text-6xl font-display font-medium leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl font-display font-medium leading-tight"
             >
               Unified Consulting for <span className="text-white/50 italic">Full-Stack Growth.</span>
             </motion.h2>

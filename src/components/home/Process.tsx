@@ -57,7 +57,7 @@ export function Process() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-display font-medium leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-display font-medium leading-tight mb-6"
           >
             How we build <br />
             <span className="text-gradient font-bold italic">High-Performance Machines.</span>

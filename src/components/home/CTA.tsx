@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function CTA() {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 relative overflow-hidden bg-[#0A0A0A]">
       <div className="absolute inset-0 z-0">
@@ -24,7 +27,7 @@ export function CTA() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-7xl font-heading font-extrabold mb-8 leading-tight uppercase">
+            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-extrabold mb-8 leading-tight uppercase">
               Ready to <span className="text-outline">Ascend?</span>
             </h2>
             <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-12">
@@ -34,7 +37,11 @@ export function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button size="lg" className="h-16 px-12 rounded-full accent-gradient text-white hover:opacity-90 text-lg font-bold group border-none">
+              <Button 
+                size="lg" 
+                onClick={() => navigate("/contact")}
+                className="h-16 px-12 rounded-full accent-gradient text-white hover:opacity-90 text-lg font-bold group border-none cursor-pointer"
+              >
                 Schedule Consultation
                 <ArrowUpRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </Button>
