@@ -80,7 +80,7 @@ export default function ContactPage() {
         </Link>
         <div className="flex items-center gap-2">
             <div className="w-6 h-6 accent-gradient rounded-sm" />
-            <span className="font-heading font-extrabold text-lg tracking-tighter uppercase">Eleve</span>
+            <span className="font-heading font-extrabold text-lg tracking-tighter uppercase">Elevé</span>
         </div>
       </nav>
 
@@ -104,7 +104,7 @@ export default function ContactPage() {
 
             <div className="space-y-8">
               {[
-                { icon: Mail, label: "Intelligence Hub", value: "strategy@eleve.consultancy" },
+                { icon: Mail, label: "Intelligence Hub", value: "hello@eleveconsultancy.com" },
                 { icon: Phone, label: "Direct Signal", value: "+1 (888) ELEVE-GRW" },
                 { icon: MapPin, label: "Coordinates", value: "Global HQ — Silicon Valley / Singapore" },
               ].map((item) => (

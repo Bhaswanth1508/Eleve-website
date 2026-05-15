@@ -44,7 +44,7 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-8 group cursor-pointer">
               <div className="w-8 h-8 accent-gradient rounded-sm transition-transform group-hover:rotate-12" />
               <span className="font-heading font-extrabold text-xl tracking-tighter uppercase">
-                Eleve
+                Elevé
               </span>
             </div>
             <p className="text-[11px] uppercase tracking-widest text-white/40 mb-8 leading-relaxed font-bold">
@@ -95,7 +95,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5">
           <div className="text-white/20 text-[10px] uppercase tracking-widest mb-4 md:mb-0 font-bold">
-            © {new Date().getFullYear()} Eleve Consultancy Services LLP. Global Headquarters.
+            © {new Date().getFullYear()} Elevé consultancy services LLP. Global Headquarters.
           </div>
           <div className="flex items-center gap-8">
             <Button
@@ -112,7 +112,7 @@ export function Footer() {
       {/* Brand Watermark Overlay */}
       <div className="absolute inset-x-0 bottom-0 overflow-hidden pointer-events-none opacity-[0.02] select-none translate-y-1/2">
         <h2 className="text-[30vw] font-display font-black whitespace-nowrap text-center leading-none">
-          ELEVE.SCALE.GROW.
+          ELEVÉ.SCALE.GROW.
         </h2>
       </div>
     </footer>

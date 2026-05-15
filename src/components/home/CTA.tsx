@@ -32,7 +32,7 @@ export function CTA() {
             </h2>
             <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-12">
               Your business doesn't need more chaos. It needs systems that scale. 
-              Join the elite circle of businesses transforming through Eleve's 
+              Join the elite circle of businesses transforming through Elevé's 
               consulting frameworks.
             </p>
             

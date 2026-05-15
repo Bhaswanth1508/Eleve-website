@@ -76,14 +76,14 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-white/40 uppercase tracking-[0.3em] text-sm font-bold mb-4">The Eleve Mission</h4>
+              <h4 className="text-white/40 uppercase tracking-[0.3em] text-sm font-bold mb-4">The Elevé Mission</h4>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-medium mb-6 leading-tight">
                 Not just consultants. <br />
                 Your <span className="text-gradient">Architects of Scale.</span>
               </h2>
               <p className="text-lg text-white/60 leading-relaxed max-w-xl">
                 Founded on the principle that strategy without execution is hallucination, 
-                Eleve helps businesses move from chaotic growth to systematic scaling. 
+                Elevé helps businesses move from chaotic growth to systematic scaling. 
                 We integrate ourselves into your DNA to build the engines of tomorrow.
               </p>
             </motion.div>

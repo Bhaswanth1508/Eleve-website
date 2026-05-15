@@ -37,7 +37,7 @@ export function Navbar() {
           <Link to="/" className="group flex items-center gap-2">
             <div className="w-8 h-8 accent-gradient rounded-sm transition-transform group-hover:rotate-12" />
             <span className="font-heading font-extrabold text-xl tracking-tighter uppercase whitespace-nowrap">
-              Eleve
+              Elevé
             </span>
           </Link>
         </div>
